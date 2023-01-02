@@ -31,7 +31,8 @@ Tree path of whole project
 │   └── LaTeX_Files
 │       ├── arxiv.sty
 │       └── sample.tex
-├── Group_N_Final_x3.ipynb
+├── Group_N_Final_x4.ipynb
+├── manager.png
 ├── past_notebooks(discarded)
 │   ├── Features On Past Data WITH Weighted Avg.ipynb
 │   ├── Features On Past Data With Weights From Sigmoid.ipynb
@@ -47,29 +48,15 @@ Tree path of whole project
 │   ├── Group_N_Final_x3(14.Dec.2022).pdf
 │   └── Group_N_Final_x3(18.Dec.2022).pdf
 ├── pics
-│   ├── ae16_featureset
-│   │   ├── featureset_ae16_CV_sumary.png
-│   │   ├── featureset_ae16_NN_classification_report.png
-│   │   ├── featureset_ae16_NN_confusion_matrix.png
-│   │   └── featureset_ae16_NN_CV.png
 │   ├── average_of_clfs.png
 │   ├── copmare_all_featuresets.png
-│   ├── featureset5
-│   │   ├── featureset5_CV_sumary.png
-│   │   ├── featureset5_NN_classification_report.png
-│   │   ├── featureset5_NN_confusion_matrix.png
-│   │   └── featureset5_NN_CV.png
-│   ├── pca30_featureset
-│   │   ├── featureset_pca30_CV_sumary.png
-│   │   ├── featureset_pca30_NN_classification_report.png
-│   │   ├── featureset_pca30_NN_confusion_matrix.png
-│   │   └── featureset_pca30_NN_CV.png
 │   └── rfe_featureset
 │       ├── featureset_rfe_CV_sumary.png
 │       ├── featureset_rfe_NN_classification_report.png
 │       ├── featureset_rfe_NN_confusion_matrix.png
 │       └── featureset_rfe_NN_CV.png
 ├── Readme.md
+├── requirements.txt
 ├── results.csv
 ├── saved_data
 │   ├── backup
@@ -99,6 +86,7 @@ Tree path of whole project
 │   │   └── feature_set_PCA30.h5
 │   ├── compare_feature_set_dict.pkl
 │   ├── feature_set_AE16
+│   │   ├── assets
 │   │   ├── fingerprint.pb
 │   │   ├── keras_metadata.pb
 │   │   ├── saved_model.pb
@@ -106,6 +94,7 @@ Tree path of whole project
 │   │       ├── variables.data-00000-of-00001
 │   │       └── variables.index
 │   ├── feature_set_AE30
+│   │   ├── assets
 │   │   ├── fingerprint.pb
 │   │   ├── keras_metadata.pb
 │   │   ├── saved_model.pb
@@ -113,6 +102,7 @@ Tree path of whole project
 │   │       ├── variables.data-00000-of-00001
 │   │       └── variables.index
 │   ├── feature_set_AE4
+│   │   ├── assets
 │   │   ├── fingerprint.pb
 │   │   ├── keras_metadata.pb
 │   │   ├── saved_model.pb
@@ -173,7 +163,123 @@ Tree path of whole project
 │   ├── feature_set_sfs.pkl
 │   ├── feature_set_skb.h5
 │   └── feature_set_skb.pkl
-└── sub_work
-    ├── auto_model_selection.ipynb
-    └── Further_explore_NN.ipynb
+├── sub_work
+│   ├── auto_model_selection.ipynb
+│   └── Further_explore_NN.ipynb
+└── to_submit
+    ├── Group_N_Final_x4.ipynb
+    ├── pics
+    │   ├── average_of_clfs.png
+    │   ├── copmare_all_featuresets.png
+    │   └── rfe_featureset
+    │       ├── featureset_rfe_CV_sumary.png
+    │       ├── featureset_rfe_NN_classification_report.png
+    │       ├── featureset_rfe_NN_confusion_matrix.png
+    │       └── featureset_rfe_NN_CV.png
+    ├── results.csv
+    ├── saved_data
+    │   ├── backup
+    │   │   ├── compare_feature_set_dict.pkl
+    │   │   ├── feature_set_AE16
+    │   │   │   ├── fingerprint.pb
+    │   │   │   ├── keras_metadata.pb
+    │   │   │   ├── saved_model.pb
+    │   │   │   └── variables
+    │   │   │       ├── variables.data-00000-of-00001
+    │   │   │       └── variables.index
+    │   │   ├── feature_set_AE30
+    │   │   │   ├── fingerprint.pb
+    │   │   │   ├── keras_metadata.pb
+    │   │   │   ├── saved_model.pb
+    │   │   │   └── variables
+    │   │   │       ├── variables.data-00000-of-00001
+    │   │   │       └── variables.index
+    │   │   ├── feature_set_AE4
+    │   │   │   ├── fingerprint.pb
+    │   │   │   ├── keras_metadata.pb
+    │   │   │   ├── saved_model.pb
+    │   │   │   └── variables
+    │   │   │       ├── variables.data-00000-of-00001
+    │   │   │       └── variables.index
+    │   │   ├── feature_set_PCA20.h5
+    │   │   └── feature_set_PCA30.h5
+    │   ├── compare_feature_set_dict.pkl
+    │   ├── feature_set_AE16
+    │   │   ├── assets
+    │   │   ├── fingerprint.pb
+    │   │   ├── keras_metadata.pb
+    │   │   ├── saved_model.pb
+    │   │   └── variables
+    │   │       ├── variables.data-00000-of-00001
+    │   │       └── variables.index
+    │   ├── feature_set_AE30
+    │   │   ├── assets
+    │   │   ├── fingerprint.pb
+    │   │   ├── keras_metadata.pb
+    │   │   ├── saved_model.pb
+    │   │   └── variables
+    │   │       ├── variables.data-00000-of-00001
+    │   │       └── variables.index
+    │   ├── feature_set_AE4
+    │   │   ├── assets
+    │   │   ├── fingerprint.pb
+    │   │   ├── keras_metadata.pb
+    │   │   ├── saved_model.pb
+    │   │   └── variables
+    │   │       ├── variables.data-00000-of-00001
+    │   │       └── variables.index
+    │   ├── feature_set_PCA20.h5
+    │   └── feature_set_PCA30.h5
+    ├── saved_dataframes
+    │   ├── backup
+    │   │   ├── epl_for_final_eval.pkl
+    │   │   └── past_data_with_features.pkl
+    │   ├── epl_for_final_eval.pkl
+    │   └── past_data_with_features.pkl
+    └── saved_models
+        ├── backup
+        │   ├── feature_set5.h5
+        │   ├── feature_set5.pkl
+        │   ├── feature_set_AE16.h5
+        │   ├── feature_set_AE16.pkl
+        │   ├── feature_set_AE30.h5
+        │   ├── feature_set_AE30.pkl
+        │   ├── feature_set_AE4.h5
+        │   ├── feature_set_AE4.pkl
+        │   ├── feature_set_PCA20.h5
+        │   ├── feature_set_PCA20.pkl
+        │   ├── feature_set_PCA30.h5
+        │   ├── feature_set_PCA30.pkl
+        │   ├── feature_set_rfe.h5
+        │   ├── feature_set_rfe.pkl
+        │   ├── feature_set_select_model_L1.h5
+        │   ├── feature_set_select_model_L1.pkl
+        │   ├── feature_set_select_model_tree.h5
+        │   ├── feature_set_select_model_tree.pkl
+        │   ├── feature_set_sfs.h5
+        │   ├── feature_set_sfs.pkl
+        │   ├── feature_set_skb.h5
+        │   └── feature_set_skb.pkl
+        ├── feature_set5.h5
+        ├── feature_set5.pkl
+        ├── feature_set_AE16.h5
+        ├── feature_set_AE16.pkl
+        ├── feature_set_AE30.h5
+        ├── feature_set_AE30.pkl
+        ├── feature_set_AE4.h5
+        ├── feature_set_AE4.pkl
+        ├── feature_set_PCA20.h5
+        ├── feature_set_PCA20.pkl
+        ├── feature_set_PCA30.h5
+        ├── feature_set_PCA30.pkl
+        ├── feature_set_rfe.h5
+        ├── feature_set_rfe.pkl
+        ├── feature_set_select_model_L1.h5
+        ├── feature_set_select_model_L1.pkl
+        ├── feature_set_select_model_tree.h5
+        ├── feature_set_select_model_tree.pkl
+        ├── feature_set_sfs.h5
+        ├── feature_set_sfs.pkl
+        ├── feature_set_skb.h5
+        └── feature_set_skb.pkl
 ```
